@@ -6,7 +6,7 @@ resource "aws_instance" "public-ec2" {
     iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
     availability_zone = "${var.region}a"
     vpc_security_group_ids = [aws_security_group.flaskapp-ec2.id, ]
-    key_name = var.ssh_key
+    key_name = var.sshkey
 
     user_data = <<-EOF
                 #!/bin/bash

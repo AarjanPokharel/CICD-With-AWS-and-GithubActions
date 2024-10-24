@@ -17,6 +17,7 @@ variable "region" {
     default = "us-east-1"
 }
 
-variable "ssh_key" {
+variable "sshkey" {
     type = string
+    description = "Private SSH key to access the server"
 }
