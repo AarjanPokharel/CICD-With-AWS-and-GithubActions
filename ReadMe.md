@@ -1,6 +1,7 @@
 Building AWS infrasturcture using Terraform and utilizing CICD via Github Actions to deploy a dockerized Flask app within an ec2 instance.
 
-THINGS DONE SO FAR:
+WHAT HAS BEEN DONE:
+----------------------
 1. Created AWS infrastructure using terraform. This includes:
 - a VPC
 - a public subnet
@@ -14,4 +15,17 @@ THINGS DONE SO FAR:
 2. Wrote a simple Flask application code
 
 3. Created a Dockerfile to package the Flask application and its dependencies
+
+4. Created the GitHub Action Workflow to build and deploy the flask application
+
+
+
+
+Result:
+
+Docker container running within the ec2 instance:
+![alt text](image-2.png)
+
+Flask application running at port 80:
+![alt text](image.png)
 
