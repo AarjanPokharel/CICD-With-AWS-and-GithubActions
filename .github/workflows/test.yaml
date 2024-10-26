@@ -1,0 +1,17 @@
+name: Check for Secret's Existence
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if the secret exists
+        run: |
+          if [ -z "${{ secrets.AWS_ACCOUNT_ID }}" ]; then
+            echo "Secret SECRET_NAME does not exist or is empty."
+            exit 1
+          else
+            echo "Secret SECRET_NAME exists."
+          fi

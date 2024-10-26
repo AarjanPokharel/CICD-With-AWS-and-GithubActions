@@ -11,7 +11,7 @@ THINGS DONE SO FAR:
 - IAM roles and instance profile for the ec2 instance
 - an ECR repository to store the docker image within ec2 instance
 
-2. Written a simple Flask application code
+2. Wrote a simple Flask application code
 
 3. Created a Dockerfile to package the Flask application and its dependencies
 

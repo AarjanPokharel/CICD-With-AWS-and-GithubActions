@@ -20,3 +20,5 @@ crash.log
 
 # Ignore any other sensitive files, such as .tfvars files that store secrets
 *.tfvars
+
+.github/workflows/build-and-deploy-wf.yaml
