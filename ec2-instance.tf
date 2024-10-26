@@ -22,3 +22,7 @@ resource "aws_instance" "public-ec2" {
         "Name" = "flaskapp-ec2-instance"
     }
 }
+
+output "flaskapp_url" {
+  value = "https://${aws_instance.public-ec2.public_ip}:80"
+}

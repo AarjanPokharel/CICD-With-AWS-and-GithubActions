@@ -9,7 +9,7 @@ resource "aws_iam_role" "for-ec2" {
             Effect = "Allow"
             Sid = ""
             Principal = {
-                Service = "ec2.awsamazon.com"
+                Service = "ec2.amazonaws.com"
             }
         },
     ]
