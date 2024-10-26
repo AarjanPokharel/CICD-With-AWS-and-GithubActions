@@ -44,6 +44,7 @@ jobs:
   deploy-docker-container:
     
     runs-on: ubuntu-latest
+    needs: build-docker-image
     steps:
       - name: Check Repo
         uses: actions/checkout@v2
